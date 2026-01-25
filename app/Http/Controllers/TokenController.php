@@ -12,7 +12,7 @@ class TokenController extends Controller
     {
         $tokens = Token::orderBy('created_at')->get();
         $current = Token::where('status', 'serving')->first();
-        return view('admin.dashboard', compact('tokens', 'current'));
+        return view('admin', compact('tokens', 'current'));
     }
 
    
