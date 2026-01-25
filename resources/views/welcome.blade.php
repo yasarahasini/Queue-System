@@ -21,6 +21,7 @@
             text-align: center;
             max-width: 400px;
             width: 100%;
+            animation: fadeIn 1s ease-in-out;
         }
 
         h1 {
@@ -40,12 +41,15 @@
             font-weight: bold;
             color: #e84118;
             margin: 20px 0;
+            animation: pulse 1.5s infinite;
         }
 
         .success-message {
             color: #44bd32;
             margin-bottom: 20px;
             font-weight: 500;
+            opacity: 0;
+            animation: fadeInSuccess 1s forwards;
         }
 
         button {
@@ -56,11 +60,29 @@
             font-size: 16px;
             border-radius: 8px;
             cursor: pointer;
-            transition: background 0.3s ease;
+            transition: transform 0.2s, background 0.3s;
         }
 
         button:hover {
             background-color: #00a8ff;
+            transform: scale(1.05);
+        }
+
+        /* Animations */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInSuccess {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
