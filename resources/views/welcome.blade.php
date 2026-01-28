@@ -5,7 +5,7 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #b3bbde;
+            background-color: #6c7dc7;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -64,11 +64,11 @@
         }
 
         button:hover {
-            background-color: #00a8ff;
+            background-color: #0b2292;
             transform: scale(1.05);
         }
 
-        /* Animations */
+     
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.1); }
