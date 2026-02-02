@@ -10,7 +10,7 @@
             min-height: 100vh;
             margin: 0;
             padding-top: 60px;
-            color: #fff;
+            color: #f10909;
         }
 
         h1 {
