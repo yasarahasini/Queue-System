@@ -10,7 +10,7 @@ return new class extends Migration {
         Schema::create('tokens', function (Blueprint $table) {
             $table->id();
             $table->integer('token_number');
-            $table->string('status')->default('pending'); // pending | serving | completed
+            $table->string('status')->default('pending');
             $table->timestamps();
         });
     }
